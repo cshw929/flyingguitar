@@ -13,3 +13,6 @@ target
 .classpath
 .settings
 .metadata
+
+# ignore system files
+.DS_Store

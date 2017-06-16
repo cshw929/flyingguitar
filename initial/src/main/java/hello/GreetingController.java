@@ -12,13 +12,15 @@ public class GreetingController {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/")
-    public Boolean index(@RequestParam(value="signature", defaultValue="No signiture") String signature,
-                            @RequestParam(value="timestamp", defaultValue="No timestamp") String timestamp) {
+    public String index(@RequestParam(value="signature", defaultValue="No signiture") String signature,
+                        @RequestParam(value="timestamp", defaultValue="No timestamp") String timestamp,
+                        @RequestParam(value="nounce", defaultValue="No nounce") String nounce,
+                        @RequestParam(value="echostr", defaultValue="No echostr") String echostr) {
         //return new Greeting(counter.incrementAndGet(),String.format(template, name));
         //System.out.println("解密后明文: ");
 
 
 
-        return true;
+        return signature+timestamp+nounce+echostr;
     }
 }

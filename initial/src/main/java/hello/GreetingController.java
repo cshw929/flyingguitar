@@ -16,11 +16,12 @@ public class GreetingController {
                         @RequestParam(value="timestamp", defaultValue="No timestamp") String timestamp,
                         @RequestParam(value="nounce", defaultValue="No nounce") String nounce,
                         @RequestParam(value="echostr", defaultValue="No echostr") String echostr) {
-        //return new Greeting(counter.incrementAndGet(),String.format(template, name));
-        System.out.println(signature+timestamp+nounce+echostr);
+        System.out.println("Signiture: " + signature);
+        System.out.println("Timestamp: " + timestamp);
+        System.out.println("Nounce: " + nounce);
+        System.out.println("Echostr: " + echostr);
 
+        return echostr;
 
-
-        return signature+timestamp+nounce+echostr;
     }
 }

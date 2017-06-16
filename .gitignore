@@ -18,4 +18,5 @@ target
 .DS_Store
 
 # ignore cached files
-.idea/
+.idea/*
+initial/.idea/*

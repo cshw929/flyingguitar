@@ -16,3 +16,6 @@ target
 
 # ignore system files
 .DS_Store
+
+# ignore cached files
+.idea/

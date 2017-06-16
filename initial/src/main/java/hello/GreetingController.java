@@ -17,7 +17,7 @@ public class GreetingController {
                         @RequestParam(value="nounce", defaultValue="No nounce") String nounce,
                         @RequestParam(value="echostr", defaultValue="No echostr") String echostr) {
         //return new Greeting(counter.incrementAndGet(),String.format(template, name));
-        //System.out.println("解密后明文: ");
+        System.out.println(signature+timestamp+nounce+echostr);
 
 
 
